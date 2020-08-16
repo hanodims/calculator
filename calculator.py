@@ -22,9 +22,8 @@ def main():
 	if oper == "-" :
 		print(int(n1) - int(n2))
 	if oper == "/" :
-		while int(n2) == 0:
+		if int(n2) == 0:
 			print(" %s is invalid , %s deivded by zero is undefined" % (n2,n1))
-			n2 = input("Enter the second number: ")
 		else: print(int(n1) / int(n2))
 			
 
